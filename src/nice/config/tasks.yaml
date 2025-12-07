@@ -15,4 +15,13 @@ reporting_task:
     A fully fledge reports with the mains topics, each with a full section of information.
     Formatted as markdown without '```'
   agent: reporting_analyst
-  output_file: report.md
+  output_file: research.md
+
+gist_task:
+  description: >
+    Review the context you got and compress it into 5 minute gist, keeping only important details.
+    Make sure the gist contains all relevant information and makes the reader want to read full research.
+  expected_output: >
+    5 minute gist for high-level decision makers. Formatted as markdown without '```'
+  agent: writer
+  output_file: gist.md
